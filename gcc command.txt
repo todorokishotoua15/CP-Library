@@ -1,0 +1,1 @@
+g++ -Wall -Wextra -Wconversion -static-Wl,--stack=81920000000 -O2 

@@ -1,0 +1,21 @@
+Statement:
+Stefan and his twin brother Dasca, goes to a party. The party serves n different types of pastry and there are a_i number of pastry available of type i. Stefan and his brother has wierd taste and instead of having preference for a particular type of pastry, they have preferences for the cake slice itself. Formally, each of the cake slice belonging to a particular type has tastiness value denoted by t_{ij} (tastiness value of jth slice of ith pastry type). t_{ij} can be negative, meaning that both the brothers dislike the slice. Stefan has to choose cake slices for his brother and hismelf such that the total sum of tastiness is maximized with the restriction that if stefan chooses a slice of type i, then he has to choose another slice of type i for his brother. Additionally, stefan being greedy can choose one more slice than his brother (that is, he can choose one  slice of type i without having to choose another slice of type i for his brother, at most one). Find the maximum tastiness that stefan can achieve.
+
+Input format : The first line conatins an integer n (1 <= n <= 2e5), denoting the total number of pastry types. The following n line contains a series of integers where the first number of i^{th} line denote the total number of slices available of the pastry type i, say x, followed by x integers, denoting the preference of stefan and his brother for the slices of type i.
+
+Samples:
+Input 1
+5
+3 5 4 1
+3 5 -6 -7
+5 5 5 -1 -2
+2 3 2
+2 11 -12
+
+Output 1
+35
+
+Explanation : 
+Stefan chooses the first slice of type 1 with value of 5. Now he has to choose one more slice of type 1 for his brother (or he can choose to select the slice for himself, which can be done at most 1 time), so he chooses the second slice of type 1 with value of 4, making the selected value to be 9.
+Next he chooses first slice of type 3 for himself and second slice of type 3 for his brother, with a selected value of 10. Then he chooses first slice of type 4 for himself and second slice of type 4 for his brother, making the selected value 5. Finally he chooses first slice of type 5 only for himself. 
+Thus the total tastiness is = 9 + 10 + 5 + 11 = 35.

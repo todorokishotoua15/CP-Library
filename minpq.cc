@@ -1,0 +1,1 @@
+template<typename T> using minpq = priority_queue<T, vector<T>, greater<T>>;

@@ -1,0 +1,17 @@
+// Roll - IMT2021016
+#ifndef GAME_H
+#define GAME_H
+
+using namespace std;
+
+class Game {
+public:
+	virtual void start() {};
+	virtual string move_l() {};
+	virtual string move_r() {};
+	virtual string move_u() {};
+	virtual string move_d() {};
+
+};
+
+#endif
